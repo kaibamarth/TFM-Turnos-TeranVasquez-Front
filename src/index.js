@@ -4,14 +4,16 @@ import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>  
 );
 
 // If you want to start measuring performance in your app, pass a function
