@@ -1,0 +1,106 @@
+/* Contenedor general */
+.main-container {
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Tabla */
+  .table-container {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .action-button {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .action-button.abrir {
+    background-color: #3213e1;
+    color: white;
+  }
+  
+  .action-button.cerrar {
+    background-color: #0d5b1b;
+    color: white;
+  }
+  
+  .action-button.abandono {
+    background-color: #9f1111;
+    color: white;
+  } 
+  
+  /* Crear paciente y filtro */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .controls button {
+    padding: 10px 16px;
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .controls button:hover {
+    background-color: #1c7ed6;
+  }
+  
+  .controls select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .filtro-especialidad {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    min-width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .filtro-especialidad:focus {
+    border-color: #3399ff;
+    box-shadow: 0 0 0 2px rgba(51, 153, 255, 0.3);
+    outline: none;
+  }
+      
+  

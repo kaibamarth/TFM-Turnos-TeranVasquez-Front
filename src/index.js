@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Login from './pages/login';
+import Turno from './pages/turno';
+import DashboardPage from './pages/dashboard';
+import CrearPaciente from './pages/pacientes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +15,9 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/turno" element={<Turno />} />
+      <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/pacientes" element={<CrearPaciente />} />
     </Routes>
   </BrowserRouter>  
 );

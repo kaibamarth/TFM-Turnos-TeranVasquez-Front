@@ -1,0 +1,38 @@
+.dashboard-page {
+  padding: 100px 30px 30px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  min-height: 100vh;
+  color: #333;
+}
+
+  
+  .dashboard-page .content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .crear-btn {
+    background-color: #3399ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .crear-btn:hover {
+    background-color: #1c7ed6;
+  }
+  
+  .crear-btn:active {
+    background-color: #1864ab;
+  }
+  
