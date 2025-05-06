@@ -63,10 +63,16 @@ const SolicitudTurno = () => {
   return (
     <div className="turno-container">
       {step === 0 && (
-        <button className="btn-big" onClick={() => setStep(1)}>
-          Solicitar Turno
-        </button>
+        <div className="btn-group">
+          <button className="btn-main" onClick={() => setStep(1)}>
+            Solicitar Turno (Paciente registrado)
+          </button>
+          <button className="btn-secondary" onClick={() => window.location.href = '/pacientes'}>
+            Registrarte
+          </button>
+        </div>
       )}
+
 
       {step === 1 && (
         <div className="step">

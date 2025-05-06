@@ -56,3 +56,25 @@ export const actionAtencion = async ({ idAtencion, usuarioId, abandonada, codigo
         throw error;
     }
 }
+
+export const getAtencionesAll = async () => {
+    try {
+        const response = await fetch(`${API_URL}/turnos/api/turnos/atenciones`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            targetMethod: "GET",
+            queryParams: null,
+            body: null
+        }),
+        });
+        if (!response.ok) {
+        throw new Error('Error al obtener atenciones');
+        }
+        return await response.json();
+    } catch (error) {
+        throw error;
+    }
+}

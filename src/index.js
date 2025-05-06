@@ -8,6 +8,7 @@ import Login from './pages/login';
 import Turno from './pages/turno';
 import DashboardPage from './pages/dashboard';
 import CrearPaciente from './pages/pacientes';
+import Atencion from './pages/atencion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
       <Route path="/turno" element={<Turno />} />
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/pacientes" element={<CrearPaciente />} />
+      <Route path="/atencion" element={<Atencion />} />
     </Routes>
   </BrowserRouter>  
 );

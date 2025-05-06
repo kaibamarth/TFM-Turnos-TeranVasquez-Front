@@ -106,3 +106,29 @@ body {
   .prioridad-4 { background-color: #17a2b8; }
   .prioridad-5 { background-color: #6c757d; }
   
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .btn-main, .btn-secondary {
+    width: 100%;
+    padding: 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-main {
+    background-color: #2575fc;
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  

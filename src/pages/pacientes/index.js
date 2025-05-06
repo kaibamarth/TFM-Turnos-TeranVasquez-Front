@@ -30,11 +30,10 @@ const CrearPaciente = () => {
         crearPaciente(nuevoPaciente)
             .then(response => {
                 if (response.success) {
-                    // Aquí puedes manejar la respuesta exitosa, como redirigir o mostrar un mensaje
                     console.log('Paciente creado exitosamente:', response.data);
                     setConfirmMessage('Paciente creado exitosamente.');
                     setShowConfirm(true);
-                    navigate('/dashboard'); // Redirigir al dashboard o a otra página
+                    navigate('/turno'); 
                 } else {
                     setErrorMessage('Error al crear el paciente.');   
                 }
@@ -46,7 +45,6 @@ const CrearPaciente = () => {
 
         );
 
-        //navigate('/dashboard');
     };
 
     return (

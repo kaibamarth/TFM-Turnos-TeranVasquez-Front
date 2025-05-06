@@ -172,12 +172,6 @@ const DashboardPage = () => {
     <div className="dashboard">
       <Header userName={userName} onLogout={handleLogout} />
       <div className="main-content">
-        <button
-          className="crear-btn"
-          onClick={() => (window.location.href = '/pacientes')}
-        >
-          Crear Paciente
-        </button>
         <Table
           data={filteredTurnos}
           onAction={handleAction}

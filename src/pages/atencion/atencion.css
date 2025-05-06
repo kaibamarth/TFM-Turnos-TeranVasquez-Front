@@ -1,0 +1,99 @@
+.vista-turnos-container {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .turnos-lista {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-y: auto;
+  }
+  
+  .tabla-turnos {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tabla-turnos th,
+  .tabla-turnos td {
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .turno-actual {
+    flex: 1;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .turno-codigo {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .turno-paciente {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .vista-turnos-container.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .turnos-lista {
+    max-height: none; /* Quita el scroll si lo había */
+    overflow-y: visible;
+  }
+  
+  .tabla-turnos {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .resaltado-turno {
+    background: rgba(41, 216, 25, 0.8);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: fit-content;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  
+  .resaltado-turno h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+  }
+  
+  .resaltado-turno h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes flash {
+    0%   { background-color: #fff176; }
+    50%  { background-color: #fff; }
+    100% { background-color: #fff176; }
+  }
+  
+  .flash {
+    animation: flash 1s ease-in-out;
+  }
+  
+  
